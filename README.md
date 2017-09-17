@@ -20,6 +20,7 @@ Dependencies
 ------------
 
 Roles
+- kazoo-ansible.common
 - kazoo-ansible.haproxy
 
 Example Playbook
