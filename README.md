@@ -1,7 +1,7 @@
 Kazoo
 =====
 
-Kazoo Ansible Role for Kazoo
+Kazoo Role for Kazoo Ansible
 
 Requirements
 ------------
