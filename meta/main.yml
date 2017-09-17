@@ -1,6 +1,6 @@
 galaxy_info:
   author: Thomas Newman
-  description: Kazoo role for Kazoo Ansible
+  description: Kazoo Role for Kazoo Ansible
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
