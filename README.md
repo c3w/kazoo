@@ -6,7 +6,7 @@ Kazoo Ansible role for Kazoo
 Requirements
 ------------
 
-NOne
+None
 
 Role Variables
 --------------
