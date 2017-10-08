@@ -1,8 +1,8 @@
 ---
 - name: Install Kazoo
   yum:
-    name: "{{ item }}-{{ kazoo_version }}.el7.centos"
-    state: present
+    name: "{{ item }}"
+    state: latest
   with_items:
    - kazoo-applications
    - kazoo-application-*
