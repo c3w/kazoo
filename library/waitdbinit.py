@@ -2,6 +2,7 @@
 
 from ansible.module_utils.basic import *
 import ansible.module_utils.urls
+import time
 
 KAZOO_DBS = ['accounts', 'acdc', 'alerts' , 'anonymous_cdrs', \
         'dedicated_ips', 'faxes', 'global_provisioner', 'oauth', \
@@ -23,10 +24,12 @@ def main():
             dbs = json.loads(response.read())
         except Exception as ex:
             module.fail_json(msg=str(ex))
-
+    
         if set(KAZOO_DBS).issubset(set(dbs)):
             break
-
+        else:
+            time.sleep(30)
+    
     module.exit_json(changed=False)
 
 if __name__ == '__main__':
